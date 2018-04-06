@@ -26,6 +26,6 @@ app.config['DEBUG'] = True
 
 @app.route('/')
 def index():
-    return '<!doctype html><html><head><title>Starter page</title></head><body><h1>Starter page</h1></body></html>'
+    return render_template('base.html')
 
 app.run()
