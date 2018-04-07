@@ -1,9 +1,3 @@
-#signup header
-#username
-#password
-#password confirmation
-#email (required form, optional submission)
-
 #trigger errors:
 #username or password or confirmation blank
 #username or password <3 OR >20 OR contains space character
@@ -26,6 +20,10 @@ app.config['DEBUG'] = True
 
 @app.route('/')
 def index():
-    return render_template('base.html')
+    return render_template('index.html')
+
+@app.route('/welcome', methods=['POST'])
+def create_account():
+    return 'Welcome message under construction.'
 
 app.run()

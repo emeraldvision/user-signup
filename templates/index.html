@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Signup</title>
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Signup</h1>
+        <form action="/welcome" method="post">
+            <table>
+                <tr>
+                    <label>
+                        <td>Username</td>
+                        <td><input type="text" name="username" /></td>
+                    </label>
+                    <td class="error">test</td>
+                </tr>
+                <tr>
+                    <label>
+                        <td>Password</td>
+                        <td><input type="password" name="password" /></td>
+                    </label>
+                    <td class="error"></td>
+                </tr>
+                <tr>
+                    <label>
+                        <td>Re-type password</td>
+                        <td><input type="password" name="confirmaiton" /></td>
+                    </label>
+                    <td class="error"></td>
+                </tr>
+                <tr>
+                    <label>
+                        <td>Email (optional)</td>
+                        <td><input type="text" name="email" /></td>
+                    </label>
+                    <td class="error"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Create account" />
+        </form>
+    </body>
+</html>
