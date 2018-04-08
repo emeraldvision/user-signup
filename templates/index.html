@@ -15,30 +15,30 @@
                 <tr>
                     <label>
                         <td>Username</td>
-                        <td><input type="text" name="username" /></td>
+                        <td><input type="text" name="username" value="{{username}}"/></td>
                     </label>
-                    <td class="error">test</td>
+                    <td class="error">{{username_error}}</td>
                 </tr>
                 <tr>
                     <label>
                         <td>Password</td>
                         <td><input type="password" name="password" /></td>
                     </label>
-                    <td class="error"></td>
+                    <td class="error">{{password_error}}</td>
                 </tr>
                 <tr>
                     <label>
                         <td>Re-type password</td>
                         <td><input type="password" name="confirmaiton" /></td>
                     </label>
-                    <td class="error"></td>
+                    <td class="error">{{confirmation_error}}</td>
                 </tr>
                 <tr>
                     <label>
                         <td>Email (optional)</td>
-                        <td><input type="text" name="email" /></td>
+                        <td><input type="text" name="email" value="{{email}}"/></td>
                     </label>
-                    <td class="error"></td>
+                    <td class="error">{{email_error}}</td>
                 </tr>
             </table>
             <input type="submit" value="Create account" />

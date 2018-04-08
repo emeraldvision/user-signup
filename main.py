@@ -18,9 +18,16 @@ app = Flask(__name__)
 
 app.config['DEBUG'] = True
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    username = username_error = password_error = confirmation_error = email = email_error = ''
+    return render_template('index.html',
+        username = username,
+        username_error = username_error,
+        password_error = password_error,
+        confirmation_error = confirmation_error,
+        email = email,
+        email_error = email_error)
 
 @app.route('/welcome', methods=['POST'])
 def create_account():
