@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>User Signup</title>
-        <style>
-            .error {
-                color: red;
-            }
-        </style>
-    </head>
-    <body>
+{% extends 'base.html' %}
+
+{% block content %}
         <h1>Signup</h1>
         <form action="/" method="post">
             <table>
@@ -43,5 +35,4 @@
             </table>
             <input type="submit" value="Create account" />
         </form>
-    </body>
-</html>
+{% endblock %}
